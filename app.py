@@ -73,7 +73,7 @@ def job_wakeup():
 def send_line(msg, token='QQXinb4sYDttSEoiIlgamfr7vmzkAQJRTyxt4TCngVy'):
     url = "https://notify-api.line.me/api/notify"  # --> 不支援http, 只能用https
     headers = {"Authorization" : "Bearer "+ token}
-    title = '排程測試'
+    title = 'jenny排程測試'
     message =  '[%s] %s' %(title, msg)
     payload = {"message" :  message}
 
