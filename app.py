@@ -70,7 +70,7 @@ def job_wakeup():
     r = requests.get(url)
     print(r)
 
-def send_line(msg, token='rpHUQIIMkArQh6EtQpqfjK6hjPN2jjNxh0zDbcFVoD2'):
+def send_line(msg, token='QQXinb4sYDttSEoiIlgamfr7vmzkAQJRTyxt4TCngVy'):
     url = "https://notify-api.line.me/api/notify"  # --> 不支援http, 只能用https
     headers = {"Authorization" : "Bearer "+ token}
     title = '排程測試'
