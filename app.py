@@ -146,8 +146,8 @@ def aqi_chart_24h():
     
 #plt.plot(months, tsp_list, 'b-o')
 #plt.plot(months, tsp_list2, 'r:v')
-    plt.xlabel('時間', fontproperties = font)
-    plt.ylabel('總懸浮微粒μg/m^3', fontproperties = font)
+#    plt.xlabel('時間', fontproperties = font)
+ #   plt.ylabel('總懸浮微粒μg/m^3', fontproperties = font)
 
 
 
