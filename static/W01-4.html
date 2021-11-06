@@ -1,0 +1,2207 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_f704e2a834f442d9b010d87aaebc79d9 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_f704e2a834f442d9b010d87aaebc79d9" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_f704e2a834f442d9b010d87aaebc79d9 = L.map(
+        'map_f704e2a834f442d9b010d87aaebc79d9', {
+        center: [24.8066333, 120.9686833],
+        zoom: 15,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_2ff786bb5ba74b27915528014debaca3 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+    
+        var marker_c74fbc3ba3684288a953bbfc5fabeb1f = L.marker(
+            [24.801815, 120.971459],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_7a5fc52b58dd4a5a9cc1e41ced379989 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c74fbc3ba3684288a953bbfc5fabeb1f.setIcon(icon_7a5fc52b58dd4a5a9cc1e41ced379989);
+            
+    
+            var popup_dead51e2e12442d9b48f240fd8f76cd5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_21d459f5e1e247bc92a7da3ca7ad4d1f = $(`<div id="html_21d459f5e1e247bc92a7da3ca7ad4d1f" style="width: 100.0%; height: 100.0%;">新竹火車站(前站)</div>`)[0];
+                popup_dead51e2e12442d9b48f240fd8f76cd5.setContent(html_21d459f5e1e247bc92a7da3ca7ad4d1f);
+            
+
+            marker_c74fbc3ba3684288a953bbfc5fabeb1f.bindPopup(popup_dead51e2e12442d9b48f240fd8f76cd5)
+            ;
+
+            
+        
+    
+        var marker_6871c258f3d04ce3a84fc9167acd8efe = L.marker(
+            [24.803866, 120.970556],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_8227457b27f34794a467fb1e72925eb5 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6871c258f3d04ce3a84fc9167acd8efe.setIcon(icon_8227457b27f34794a467fb1e72925eb5);
+            
+    
+            var popup_02615e4704b14f1f80114dabdaf76166 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7a7a490cd20f404cbdcc6c12291ec95a = $(`<div id="html_7a7a490cd20f404cbdcc6c12291ec95a" style="width: 100.0%; height: 100.0%;">東門圓環</div>`)[0];
+                popup_02615e4704b14f1f80114dabdaf76166.setContent(html_7a7a490cd20f404cbdcc6c12291ec95a);
+            
+
+            marker_6871c258f3d04ce3a84fc9167acd8efe.bindPopup(popup_02615e4704b14f1f80114dabdaf76166)
+            ;
+
+            
+        
+    
+        var marker_c7f816e4893a4e45985374845a70f9f9 = L.marker(
+            [24.806138, 120.96926],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_a6e2372a134545aeb81a82f490d8f3b3 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c7f816e4893a4e45985374845a70f9f9.setIcon(icon_a6e2372a134545aeb81a82f490d8f3b3);
+            
+    
+            var popup_077a54ba7b664e34ada12d422fa1c06c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d80c2e51cd5a43b7a3fa86f253c9b0bb = $(`<div id="html_d80c2e51cd5a43b7a3fa86f253c9b0bb" style="width: 100.0%; height: 100.0%;">新竹市政府</div>`)[0];
+                popup_077a54ba7b664e34ada12d422fa1c06c.setContent(html_d80c2e51cd5a43b7a3fa86f253c9b0bb);
+            
+
+            marker_c7f816e4893a4e45985374845a70f9f9.bindPopup(popup_077a54ba7b664e34ada12d422fa1c06c)
+            ;
+
+            
+        
+    
+        var marker_c1c1e03a7fe64ee38f6b0a312248b9fa = L.marker(
+            [24.80167, 120.96576],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_2d9d2aeb56974d7fba840164b8473a60 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c1c1e03a7fe64ee38f6b0a312248b9fa.setIcon(icon_2d9d2aeb56974d7fba840164b8473a60);
+            
+    
+            var popup_e7e54aaea2fc4c04953d5d2da37fcd99 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_15d050ea72324f8d8f9602dfa824ee1a = $(`<div id="html_15d050ea72324f8d8f9602dfa824ee1a" style="width: 100.0%; height: 100.0%;">明志書院立體停車場</div>`)[0];
+                popup_e7e54aaea2fc4c04953d5d2da37fcd99.setContent(html_15d050ea72324f8d8f9602dfa824ee1a);
+            
+
+            marker_c1c1e03a7fe64ee38f6b0a312248b9fa.bindPopup(popup_e7e54aaea2fc4c04953d5d2da37fcd99)
+            ;
+
+            
+        
+    
+        var marker_8b778e061e774661a060a0b42fbabd42 = L.marker(
+            [24.804317, 120.973662],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_cccce28c54f2468891c86b23f0f50750 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8b778e061e774661a060a0b42fbabd42.setIcon(icon_cccce28c54f2468891c86b23f0f50750);
+            
+    
+            var popup_87e70e50f07b46669cf44cfa4b12319b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_40177afaaf0846eb8d3007b3aba71612 = $(`<div id="html_40177afaaf0846eb8d3007b3aba71612" style="width: 100.0%; height: 100.0%;">辛志平校長故居</div>`)[0];
+                popup_87e70e50f07b46669cf44cfa4b12319b.setContent(html_40177afaaf0846eb8d3007b3aba71612);
+            
+
+            marker_8b778e061e774661a060a0b42fbabd42.bindPopup(popup_87e70e50f07b46669cf44cfa4b12319b)
+            ;
+
+            
+        
+    
+        var marker_52c8a5e91dfd45de8ac44c9a55f5afc3 = L.marker(
+            [24.808979, 120.967098],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_0d2c75dfb2ba416aa5958b6292dbf722 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_52c8a5e91dfd45de8ac44c9a55f5afc3.setIcon(icon_0d2c75dfb2ba416aa5958b6292dbf722);
+            
+    
+            var popup_8f2e4f4075f944739e2554bd99389a5c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2557dc65e6344186a735c2d39d8ae711 = $(`<div id="html_2557dc65e6344186a735c2d39d8ae711" style="width: 100.0%; height: 100.0%;">中正北大路口</div>`)[0];
+                popup_8f2e4f4075f944739e2554bd99389a5c.setContent(html_2557dc65e6344186a735c2d39d8ae711);
+            
+
+            marker_52c8a5e91dfd45de8ac44c9a55f5afc3.bindPopup(popup_8f2e4f4075f944739e2554bd99389a5c)
+            ;
+
+            
+        
+    
+        var marker_0f94820a2b2c4a61a880e6367a6c3bf4 = L.marker(
+            [24.803791, 120.956616],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_173cd9f60f3b43e4939a31952cc52763 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0f94820a2b2c4a61a880e6367a6c3bf4.setIcon(icon_173cd9f60f3b43e4939a31952cc52763);
+            
+    
+            var popup_2b38b0efeabb4634bcfd25363e8881b3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a0bb595ee0a74bafb29b890d6ba97bbd = $(`<div id="html_a0bb595ee0a74bafb29b890d6ba97bbd" style="width: 100.0%; height: 100.0%;">延平停車場</div>`)[0];
+                popup_2b38b0efeabb4634bcfd25363e8881b3.setContent(html_a0bb595ee0a74bafb29b890d6ba97bbd);
+            
+
+            marker_0f94820a2b2c4a61a880e6367a6c3bf4.bindPopup(popup_2b38b0efeabb4634bcfd25363e8881b3)
+            ;
+
+            
+        
+    
+        var marker_c18e76e4013446f384fab3f744c991ee = L.marker(
+            [24.803382, 120.966675],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_f813ca2e64174eb784de58d28a13eae3 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c18e76e4013446f384fab3f744c991ee.setIcon(icon_f813ca2e64174eb784de58d28a13eae3);
+            
+    
+            var popup_018c22ce73f2491e8937cd715f4a38b3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4f31583ad1c845cca6a80aac5612fc09 = $(`<div id="html_4f31583ad1c845cca6a80aac5612fc09" style="width: 100.0%; height: 100.0%;">建國公園</div>`)[0];
+                popup_018c22ce73f2491e8937cd715f4a38b3.setContent(html_4f31583ad1c845cca6a80aac5612fc09);
+            
+
+            marker_c18e76e4013446f384fab3f744c991ee.bindPopup(popup_018c22ce73f2491e8937cd715f4a38b3)
+            ;
+
+            
+        
+    
+        var marker_a20fa8c0251f46fabf972b10e5b69194 = L.marker(
+            [24.802579, 120.978717],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_11e320df7df64516ba02e2abe2afd552 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a20fa8c0251f46fabf972b10e5b69194.setIcon(icon_11e320df7df64516ba02e2abe2afd552);
+            
+    
+            var popup_824259037f834666a9c21834f69be49b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_096e0647a7304e6a8adf42cdc407cb3d = $(`<div id="html_096e0647a7304e6a8adf42cdc407cb3d" style="width: 100.0%; height: 100.0%;">新竹公園(公園路)</div>`)[0];
+                popup_824259037f834666a9c21834f69be49b.setContent(html_096e0647a7304e6a8adf42cdc407cb3d);
+            
+
+            marker_a20fa8c0251f46fabf972b10e5b69194.bindPopup(popup_824259037f834666a9c21834f69be49b)
+            ;
+
+            
+        
+    
+        var marker_6807fe63c346480fbf55241e90e777c0 = L.marker(
+            [24.809326, 120.974258],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_b7b9d2742f2e4ad38560ad004aaf4348 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6807fe63c346480fbf55241e90e777c0.setIcon(icon_b7b9d2742f2e4ad38560ad004aaf4348);
+            
+    
+            var popup_b7c4ff386ce94695983843c27d391989 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_485b7b55f4154e87b4ea0b6d25bb523e = $(`<div id="html_485b7b55f4154e87b4ea0b6d25bb523e" style="width: 100.0%; height: 100.0%;">遠東巨城購物中心</div>`)[0];
+                popup_b7c4ff386ce94695983843c27d391989.setContent(html_485b7b55f4154e87b4ea0b6d25bb523e);
+            
+
+            marker_6807fe63c346480fbf55241e90e777c0.bindPopup(popup_b7c4ff386ce94695983843c27d391989)
+            ;
+
+            
+        
+    
+        var marker_a9823b5d36ec4d00af79f5ddccb1f01d = L.marker(
+            [24.811226, 120.979624],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_ba2ccf14b7344d44868a420d1ec8b1de = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a9823b5d36ec4d00af79f5ddccb1f01d.setIcon(icon_ba2ccf14b7344d44868a420d1ec8b1de);
+            
+    
+            var popup_fb7b0520ab304a95a8fb5537c9e34f7e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_966c76e4bf0f4d3da133b73aa16bc814 = $(`<div id="html_966c76e4bf0f4d3da133b73aa16bc814" style="width: 100.0%; height: 100.0%;">三民公園</div>`)[0];
+                popup_fb7b0520ab304a95a8fb5537c9e34f7e.setContent(html_966c76e4bf0f4d3da133b73aa16bc814);
+            
+
+            marker_a9823b5d36ec4d00af79f5ddccb1f01d.bindPopup(popup_fb7b0520ab304a95a8fb5537c9e34f7e)
+            ;
+
+            
+        
+    
+        var marker_a85b3c4b16884935a1e1a1ca50c45be7 = L.marker(
+            [24.800896, 120.973191],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_29e7402b86b142458b52b2edd51ccae0 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a85b3c4b16884935a1e1a1ca50c45be7.setIcon(icon_29e7402b86b142458b52b2edd51ccae0);
+            
+    
+            var popup_6f17ae7ed97a4989a0663a493a149089 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_27183589a722486e93968e67b6bc6bd0 = $(`<div id="html_27183589a722486e93968e67b6bc6bd0" style="width: 100.0%; height: 100.0%;">新竹轉運站</div>`)[0];
+                popup_6f17ae7ed97a4989a0663a493a149089.setContent(html_27183589a722486e93968e67b6bc6bd0);
+            
+
+            marker_a85b3c4b16884935a1e1a1ca50c45be7.bindPopup(popup_6f17ae7ed97a4989a0663a493a149089)
+            ;
+
+            
+        
+    
+        var marker_593ba2b5a5e746b19b860c5e939b90fc = L.marker(
+            [24.800074, 120.991278],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_497c04d2db7149abb962fc2713622777 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_593ba2b5a5e746b19b860c5e939b90fc.setIcon(icon_497c04d2db7149abb962fc2713622777);
+            
+    
+            var popup_1bf6c0b82cbd40f2b450b07a737c5f52 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0cc6fb2c1a354400b241b5c81a7a6a66 = $(`<div id="html_0cc6fb2c1a354400b241b5c81a7a6a66" style="width: 100.0%; height: 100.0%;">新竹馬偕紀念醫院</div>`)[0];
+                popup_1bf6c0b82cbd40f2b450b07a737c5f52.setContent(html_0cc6fb2c1a354400b241b5c81a7a6a66);
+            
+
+            marker_593ba2b5a5e746b19b860c5e939b90fc.bindPopup(popup_1bf6c0b82cbd40f2b450b07a737c5f52)
+            ;
+
+            
+        
+    
+        var marker_e4372f83b9fb42a18fba9efb04ccfbec = L.marker(
+            [24.802771, 120.9932],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_e6201db03922454e8721ae0cf8370b8f = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e4372f83b9fb42a18fba9efb04ccfbec.setIcon(icon_e6201db03922454e8721ae0cf8370b8f);
+            
+    
+            var popup_3935dd899751435aa7529334a724b26b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c73dfa3826d241a888f7aacb950273c4 = $(`<div id="html_c73dfa3826d241a888f7aacb950273c4" style="width: 100.0%; height: 100.0%;">新源建功一路口</div>`)[0];
+                popup_3935dd899751435aa7529334a724b26b.setContent(html_c73dfa3826d241a888f7aacb950273c4);
+            
+
+            marker_e4372f83b9fb42a18fba9efb04ccfbec.bindPopup(popup_3935dd899751435aa7529334a724b26b)
+            ;
+
+            
+        
+    
+        var marker_f17020fa8ae741f58708768b66eb569e = L.marker(
+            [24.796842, 120.996686],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_1f89b1387a4c473196206aa1925c026e = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f17020fa8ae741f58708768b66eb569e.setIcon(icon_1f89b1387a4c473196206aa1925c026e);
+            
+    
+            var popup_4311fb000c3c488fb89f78160c19780b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e08ff097e3e94c9bacd5a59bebf9474e = $(`<div id="html_e08ff097e3e94c9bacd5a59bebf9474e" style="width: 100.0%; height: 100.0%;">清華大學(北校門)</div>`)[0];
+                popup_4311fb000c3c488fb89f78160c19780b.setContent(html_e08ff097e3e94c9bacd5a59bebf9474e);
+            
+
+            marker_f17020fa8ae741f58708768b66eb569e.bindPopup(popup_4311fb000c3c488fb89f78160c19780b)
+            ;
+
+            
+        
+    
+        var marker_aeea43b09e704332a65e4b475b845c26 = L.marker(
+            [24.812458, 120.985033],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_f04da32bf709441a9521250c5876e980 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_aeea43b09e704332a65e4b475b845c26.setIcon(icon_f04da32bf709441a9521250c5876e980);
+            
+    
+            var popup_691e493275e44c449874caa75350eb1e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_598e9a5609f4403c8ce5888238438f89 = $(`<div id="html_598e9a5609f4403c8ce5888238438f89" style="width: 100.0%; height: 100.0%;">綠光公園</div>`)[0];
+                popup_691e493275e44c449874caa75350eb1e.setContent(html_598e9a5609f4403c8ce5888238438f89);
+            
+
+            marker_aeea43b09e704332a65e4b475b845c26.bindPopup(popup_691e493275e44c449874caa75350eb1e)
+            ;
+
+            
+        
+    
+        var marker_31bec928fba041cd9913fb368ae5d1dd = L.marker(
+            [24.794294, 120.964533],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_176c2d9114cb4b7f9e228a3e9a73970e = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_31bec928fba041cd9913fb368ae5d1dd.setIcon(icon_176c2d9114cb4b7f9e228a3e9a73970e);
+            
+    
+            var popup_d62c8b3e06a7454b809630e19755442b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_33a5dbc857144de0b1f5c955771667d2 = $(`<div id="html_33a5dbc857144de0b1f5c955771667d2" style="width: 100.0%; height: 100.0%;">新竹教育大學</div>`)[0];
+                popup_d62c8b3e06a7454b809630e19755442b.setContent(html_33a5dbc857144de0b1f5c955771667d2);
+            
+
+            marker_31bec928fba041cd9913fb368ae5d1dd.bindPopup(popup_d62c8b3e06a7454b809630e19755442b)
+            ;
+
+            
+        
+    
+        var marker_fba4bdb5635e459bbb1b9d9fcce9503b = L.marker(
+            [24.798283, 120.97042],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_e114f09667de40e8bb5405997ceb73f2 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fba4bdb5635e459bbb1b9d9fcce9503b.setIcon(icon_e114f09667de40e8bb5405997ceb73f2);
+            
+    
+            var popup_ce359a04fefd452ca0fa0a509a0d4e91 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d12a804b7272458cb2175d22a05cc2f6 = $(`<div id="html_d12a804b7272458cb2175d22a05cc2f6" style="width: 100.0%; height: 100.0%;">竹蓮寺</div>`)[0];
+                popup_ce359a04fefd452ca0fa0a509a0d4e91.setContent(html_d12a804b7272458cb2175d22a05cc2f6);
+            
+
+            marker_fba4bdb5635e459bbb1b9d9fcce9503b.bindPopup(popup_ce359a04fefd452ca0fa0a509a0d4e91)
+            ;
+
+            
+        
+    
+        var marker_e8112830a4bb4c03a317fac0a2753026 = L.marker(
+            [24.816444, 120.970561],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_82529980a9dc4aa88d7bdadb0999754d = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e8112830a4bb4c03a317fac0a2753026.setIcon(icon_82529980a9dc4aa88d7bdadb0999754d);
+            
+    
+            var popup_6a7e719f11f74b9996a74ac353ecb486 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c96d7bfca5c8487a931ab621e94fe4ed = $(`<div id="html_c96d7bfca5c8487a931ab621e94fe4ed" style="width: 100.0%; height: 100.0%;">北區區公所</div>`)[0];
+                popup_6a7e719f11f74b9996a74ac353ecb486.setContent(html_c96d7bfca5c8487a931ab621e94fe4ed);
+            
+
+            marker_e8112830a4bb4c03a317fac0a2753026.bindPopup(popup_6a7e719f11f74b9996a74ac353ecb486)
+            ;
+
+            
+        
+    
+        var marker_4b8f67bf51024d46b2bcf84861ad8501 = L.marker(
+            [24.813884, 120.973992],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_6dfaa487c3a44816a02558939405202e = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4b8f67bf51024d46b2bcf84861ad8501.setIcon(icon_6dfaa487c3a44816a02558939405202e);
+            
+    
+            var popup_cbc1eeb5fb514a84a251188a9e79faae = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2d9e642274d34c5788124f5d50718595 = $(`<div id="html_2d9e642274d34c5788124f5d50718595" style="width: 100.0%; height: 100.0%;">經國民生路口</div>`)[0];
+                popup_cbc1eeb5fb514a84a251188a9e79faae.setContent(html_2d9e642274d34c5788124f5d50718595);
+            
+
+            marker_4b8f67bf51024d46b2bcf84861ad8501.bindPopup(popup_cbc1eeb5fb514a84a251188a9e79faae)
+            ;
+
+            
+        
+    
+        var marker_e9de9210b2e34afcbba9a2ab8b850253 = L.marker(
+            [24.820368, 120.967956],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_7dfa5dfd0d9a4993bb4808c50bda7dea = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e9de9210b2e34afcbba9a2ab8b850253.setIcon(icon_7dfa5dfd0d9a4993bb4808c50bda7dea);
+            
+    
+            var popup_1c5aa57245474c13a75c93b959b7e0a0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f51500f12c994412a36c5e646e5ac1ee = $(`<div id="html_f51500f12c994412a36c5e646e5ac1ee" style="width: 100.0%; height: 100.0%;">湳雅公園</div>`)[0];
+                popup_1c5aa57245474c13a75c93b959b7e0a0.setContent(html_f51500f12c994412a36c5e646e5ac1ee);
+            
+
+            marker_e9de9210b2e34afcbba9a2ab8b850253.bindPopup(popup_1c5aa57245474c13a75c93b959b7e0a0)
+            ;
+
+            
+        
+    
+        var marker_d5ea023533264b958aeb6e6231a21294 = L.marker(
+            [24.799426, 120.957256],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_f2cd4c05d0b346e289e77b6eb8a9016b = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d5ea023533264b958aeb6e6231a21294.setIcon(icon_f2cd4c05d0b346e289e77b6eb8a9016b);
+            
+    
+            var popup_bea1ace0fe2546db9dfb738997bb10f5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_126b61aacad04fe0b3fa5b10ff48c3a4 = $(`<div id="html_126b61aacad04fe0b3fa5b10ff48c3a4" style="width: 100.0%; height: 100.0%;">天公壇</div>`)[0];
+                popup_bea1ace0fe2546db9dfb738997bb10f5.setContent(html_126b61aacad04fe0b3fa5b10ff48c3a4);
+            
+
+            marker_d5ea023533264b958aeb6e6231a21294.bindPopup(popup_bea1ace0fe2546db9dfb738997bb10f5)
+            ;
+
+            
+        
+    
+        var marker_904309829bc44c0e88cc8488e2c3c23b = L.marker(
+            [24.784875, 121.01833],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_dbfbd9a76fae4cd387a6e8e48d149811 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_904309829bc44c0e88cc8488e2c3c23b.setIcon(icon_dbfbd9a76fae4cd387a6e8e48d149811);
+            
+    
+            var popup_805cb7b333d34cc8b3898cde7265785d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7c62ce0eff4f43ddb983fabf7024ce11 = $(`<div id="html_7c62ce0eff4f43ddb983fabf7024ce11" style="width: 100.0%; height: 100.0%;">光復關新路口</div>`)[0];
+                popup_805cb7b333d34cc8b3898cde7265785d.setContent(html_7c62ce0eff4f43ddb983fabf7024ce11);
+            
+
+            marker_904309829bc44c0e88cc8488e2c3c23b.bindPopup(popup_805cb7b333d34cc8b3898cde7265785d)
+            ;
+
+            
+        
+    
+        var marker_17e40ec1bd7a48aca287f07c492befd6 = L.marker(
+            [24.777737, 121.021936],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_1a93e3cbc317497dbf7f3729f2cc9457 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_17e40ec1bd7a48aca287f07c492befd6.setIcon(icon_1a93e3cbc317497dbf7f3729f2cc9457);
+            
+    
+            var popup_e6a7451dba5a420ea83b96276cf19f50 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_447f923c42914f8ebf27da3467573401 = $(`<div id="html_447f923c42914f8ebf27da3467573401" style="width: 100.0%; height: 100.0%;">金山街(集福宮)</div>`)[0];
+                popup_e6a7451dba5a420ea83b96276cf19f50.setContent(html_447f923c42914f8ebf27da3467573401);
+            
+
+            marker_17e40ec1bd7a48aca287f07c492befd6.bindPopup(popup_e6a7451dba5a420ea83b96276cf19f50)
+            ;
+
+            
+        
+    
+        var marker_50509131b70d40208531c175564fc149 = L.marker(
+            [24.796454, 120.944523],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_d4b18ef8674d472d9820c02d79bd4af4 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_50509131b70d40208531c175564fc149.setIcon(icon_d4b18ef8674d472d9820c02d79bd4af4);
+            
+    
+            var popup_4dbeb916b93045acae7cd89e87bb90c6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2d8955f3e89b4c4490133dab2fae6e8b = $(`<div id="html_2d8955f3e89b4c4490133dab2fae6e8b" style="width: 100.0%; height: 100.0%;">香山國小</div>`)[0];
+                popup_4dbeb916b93045acae7cd89e87bb90c6.setContent(html_2d8955f3e89b4c4490133dab2fae6e8b);
+            
+
+            marker_50509131b70d40208531c175564fc149.bindPopup(popup_4dbeb916b93045acae7cd89e87bb90c6)
+            ;
+
+            
+        
+    
+        var marker_13e4d6f27e6e4cef8c9d547a31a17434 = L.marker(
+            [24.809629, 120.983512],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_99ba47b578f143e5a6a0f7e91b05918e = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_13e4d6f27e6e4cef8c9d547a31a17434.setIcon(icon_99ba47b578f143e5a6a0f7e91b05918e);
+            
+    
+            var popup_f1f3a9f9e1b844558f4d7980334f1a6a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_81521ee3252f4381834163d7172a1e5c = $(`<div id="html_81521ee3252f4381834163d7172a1e5c" style="width: 100.0%; height: 100.0%;">北新竹火車站(新竹高工)</div>`)[0];
+                popup_f1f3a9f9e1b844558f4d7980334f1a6a.setContent(html_81521ee3252f4381834163d7172a1e5c);
+            
+
+            marker_13e4d6f27e6e4cef8c9d547a31a17434.bindPopup(popup_f1f3a9f9e1b844558f4d7980334f1a6a)
+            ;
+
+            
+        
+    
+        var marker_77634cb4138c4c068bedf71a25d7c032 = L.marker(
+            [24.788113, 121.021833],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_61ae90b40e3a4015a9f5892065ae8c0b = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_77634cb4138c4c068bedf71a25d7c032.setIcon(icon_61ae90b40e3a4015a9f5892065ae8c0b);
+            
+    
+            var popup_1987c94b13a94a05bfe325d5a2c1ad93 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_81864ce2bde44178b323e8961200a5c3 = $(`<div id="html_81864ce2bde44178b323e8961200a5c3" style="width: 100.0%; height: 100.0%;">新莊火車站</div>`)[0];
+                popup_1987c94b13a94a05bfe325d5a2c1ad93.setContent(html_81864ce2bde44178b323e8961200a5c3);
+            
+
+            marker_77634cb4138c4c068bedf71a25d7c032.bindPopup(popup_1987c94b13a94a05bfe325d5a2c1ad93)
+            ;
+
+            
+        
+    
+        var marker_f6469b15197e4b08bbb242051fb00b97 = L.marker(
+            [24.807119, 121.002064],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_12362dc76a054130a5b359cf71e854c2 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f6469b15197e4b08bbb242051fb00b97.setIcon(icon_12362dc76a054130a5b359cf71e854c2);
+            
+    
+            var popup_7cd50827e53d4dabbcbfcba7a9b79237 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1eff0fb15158452482c6c490b0dc84ec = $(`<div id="html_1eff0fb15158452482c6c490b0dc84ec" style="width: 100.0%; height: 100.0%;">千甲火車站</div>`)[0];
+                popup_7cd50827e53d4dabbcbfcba7a9b79237.setContent(html_1eff0fb15158452482c6c490b0dc84ec);
+            
+
+            marker_f6469b15197e4b08bbb242051fb00b97.bindPopup(popup_7cd50827e53d4dabbcbfcba7a9b79237)
+            ;
+
+            
+        
+    
+        var marker_0332238e670d4afba52a8b13315b2e99 = L.marker(
+            [24.786994, 120.92856],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_eea86dedc88f47e68e5d4db78138f493 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0332238e670d4afba52a8b13315b2e99.setIcon(icon_eea86dedc88f47e68e5d4db78138f493);
+            
+    
+            var popup_32ed299ac2aa478d97bbfde2593a2629 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e24bf96290314567ae8ea9e5a7e73ac0 = $(`<div id="html_e24bf96290314567ae8ea9e5a7e73ac0" style="width: 100.0%; height: 100.0%;">三姓橋火車站</div>`)[0];
+                popup_32ed299ac2aa478d97bbfde2593a2629.setContent(html_e24bf96290314567ae8ea9e5a7e73ac0);
+            
+
+            marker_0332238e670d4afba52a8b13315b2e99.bindPopup(popup_32ed299ac2aa478d97bbfde2593a2629)
+            ;
+
+            
+        
+    
+        var marker_2edfe2d21d4642e8a7e52a731978cd8f = L.marker(
+            [24.763156, 120.913819],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_e8927201ba404741896a48c1d9690379 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2edfe2d21d4642e8a7e52a731978cd8f.setIcon(icon_e8927201ba404741896a48c1d9690379);
+            
+    
+            var popup_7e0330040fab440aaa71db592b4af166 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ff791bd81d174c3091fef48b43b526b3 = $(`<div id="html_ff791bd81d174c3091fef48b43b526b3" style="width: 100.0%; height: 100.0%;">香山火車站</div>`)[0];
+                popup_7e0330040fab440aaa71db592b4af166.setContent(html_ff791bd81d174c3091fef48b43b526b3);
+            
+
+            marker_2edfe2d21d4642e8a7e52a731978cd8f.bindPopup(popup_7e0330040fab440aaa71db592b4af166)
+            ;
+
+            
+        
+    
+        var marker_6a781a5440dd4a45a8d12114041e9813 = L.marker(
+            [24.7894, 121.00026],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_1f8973d091924102b14eca1841f747e7 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6a781a5440dd4a45a8d12114041e9813.setIcon(icon_1f8973d091924102b14eca1841f747e7);
+            
+    
+            var popup_d2fa501083584830acfbcc50a985eb53 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_384c90d27097431991ce6d6ed9f3ac2a = $(`<div id="html_384c90d27097431991ce6d6ed9f3ac2a" style="width: 100.0%; height: 100.0%;">交通大學(大學路)</div>`)[0];
+                popup_d2fa501083584830acfbcc50a985eb53.setContent(html_384c90d27097431991ce6d6ed9f3ac2a);
+            
+
+            marker_6a781a5440dd4a45a8d12114041e9813.bindPopup(popup_d2fa501083584830acfbcc50a985eb53)
+            ;
+
+            
+        
+    
+        var marker_184ad2f553d24c719b5de73286e4d585 = L.marker(
+            [24.778031, 120.940465],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_1e7b9ded40af4300bd50633953878256 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_184ad2f553d24c719b5de73286e4d585.setIcon(icon_1e7b9ded40af4300bd50633953878256);
+            
+    
+            var popup_d538c42e1b1f47d2af55f3a0287c687a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_977a00ca739c4f66bf2e5add41619600 = $(`<div id="html_977a00ca739c4f66bf2e5add41619600" style="width: 100.0%; height: 100.0%;">元培醫事科技大學</div>`)[0];
+                popup_d538c42e1b1f47d2af55f3a0287c687a.setContent(html_977a00ca739c4f66bf2e5add41619600);
+            
+
+            marker_184ad2f553d24c719b5de73286e4d585.bindPopup(popup_d538c42e1b1f47d2af55f3a0287c687a)
+            ;
+
+            
+        
+    
+        var marker_94020fef10ff4a6d92888820d4874dde = L.marker(
+            [24.821613, 120.959777],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_bc3ba4b07a8144f68f0901aaedd01033 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_94020fef10ff4a6d92888820d4874dde.setIcon(icon_bc3ba4b07a8144f68f0901aaedd01033);
+            
+    
+            var popup_c492f13f21994d6181e95f646ce92f61 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a5e27977fbc24d9591bf0dab06e49798 = $(`<div id="html_a5e27977fbc24d9591bf0dab06e49798" style="width: 100.0%; height: 100.0%;">樹林頭公園</div>`)[0];
+                popup_c492f13f21994d6181e95f646ce92f61.setContent(html_a5e27977fbc24d9591bf0dab06e49798);
+            
+
+            marker_94020fef10ff4a6d92888820d4874dde.bindPopup(popup_c492f13f21994d6181e95f646ce92f61)
+            ;
+
+            
+        
+    
+        var marker_e44cd001bd8445e8b70bc77be52a554e = L.marker(
+            [24.79288, 120.99347],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_9e41de0f98d8467c843b411d2591b47d = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e44cd001bd8445e8b70bc77be52a554e.setIcon(icon_9e41de0f98d8467c843b411d2591b47d);
+            
+    
+            var popup_fd9828a13c434f5b82d5728b7c3e7bff = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b40fe098a79c44cf9b10319e2355af96 = $(`<div id="html_b40fe098a79c44cf9b10319e2355af96" style="width: 100.0%; height: 100.0%;">清華大學(小吃部)</div>`)[0];
+                popup_fd9828a13c434f5b82d5728b7c3e7bff.setContent(html_b40fe098a79c44cf9b10319e2355af96);
+            
+
+            marker_e44cd001bd8445e8b70bc77be52a554e.bindPopup(popup_fd9828a13c434f5b82d5728b7c3e7bff)
+            ;
+
+            
+        
+    
+        var marker_ea8457c1198b4a1bb14450afef0ca60d = L.marker(
+            [24.7849, 120.99964],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_4bf486e540154e5a8a1c73183595cf2a = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ea8457c1198b4a1bb14450afef0ca60d.setIcon(icon_4bf486e540154e5a8a1c73183595cf2a);
+            
+    
+            var popup_b8ea16be9e034acd9a4ea5795348d1f1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_dc3e680751844c5cb67f21169fa6a75d = $(`<div id="html_dc3e680751844c5cb67f21169fa6a75d" style="width: 100.0%; height: 100.0%;">交通大學(逐風廣場)</div>`)[0];
+                popup_b8ea16be9e034acd9a4ea5795348d1f1.setContent(html_dc3e680751844c5cb67f21169fa6a75d);
+            
+
+            marker_ea8457c1198b4a1bb14450afef0ca60d.bindPopup(popup_b8ea16be9e034acd9a4ea5795348d1f1)
+            ;
+
+            
+        
+    
+        var marker_6764c0ed468e438480de1dd608f3552c = L.marker(
+            [24.79974, 120.9942],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_1400a9e91b38495f848bbeb2f7138474 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6764c0ed468e438480de1dd608f3552c.setIcon(icon_1400a9e91b38495f848bbeb2f7138474);
+            
+    
+            var popup_db8b04d3f5e247e088d006dbed072cc8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4b0a276e101840abb5103fbdce76673d = $(`<div id="html_4b0a276e101840abb5103fbdce76673d" style="width: 100.0%; height: 100.0%;">赤土崎公園</div>`)[0];
+                popup_db8b04d3f5e247e088d006dbed072cc8.setContent(html_4b0a276e101840abb5103fbdce76673d);
+            
+
+            marker_6764c0ed468e438480de1dd608f3552c.bindPopup(popup_db8b04d3f5e247e088d006dbed072cc8)
+            ;
+
+            
+        
+    
+        var marker_f7930413a0b54741aeaad98439fec1fd = L.marker(
+            [24.80613, 120.978],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_5ed9c249557e4f17b45a4db460198002 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f7930413a0b54741aeaad98439fec1fd.setIcon(icon_5ed9c249557e4f17b45a4db460198002);
+            
+    
+            var popup_c16c3ffe40224ca9b632a23ce22fde97 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2b418db175a64819aff4c117ff8e5347 = $(`<div id="html_2b418db175a64819aff4c117ff8e5347" style="width: 100.0%; height: 100.0%;">國賓大飯店(新光三越)</div>`)[0];
+                popup_c16c3ffe40224ca9b632a23ce22fde97.setContent(html_2b418db175a64819aff4c117ff8e5347);
+            
+
+            marker_f7930413a0b54741aeaad98439fec1fd.bindPopup(popup_c16c3ffe40224ca9b632a23ce22fde97)
+            ;
+
+            
+        
+    
+        var marker_af9b1bbe93cb49b3964858dc110bb560 = L.marker(
+            [24.78743, 121.01736],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_cd21cac2164e45d8a27af1ef3d4450cd = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_af9b1bbe93cb49b3964858dc110bb560.setIcon(icon_cd21cac2164e45d8a27af1ef3d4450cd);
+            
+    
+            var popup_f16bd522898d48f49d8da82a12a08c7d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f2307ee37d1f4c5986931c4a64481d1e = $(`<div id="html_f2307ee37d1f4c5986931c4a64481d1e" style="width: 100.0%; height: 100.0%;">新莊公園</div>`)[0];
+                popup_f16bd522898d48f49d8da82a12a08c7d.setContent(html_f2307ee37d1f4c5986931c4a64481d1e);
+            
+
+            marker_af9b1bbe93cb49b3964858dc110bb560.bindPopup(popup_f16bd522898d48f49d8da82a12a08c7d)
+            ;
+
+            
+        
+    
+        var marker_5d960f4305e2498097199b54dd0f174e = L.marker(
+            [24.81713, 120.96398],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_590e66b7f6cf4c759480d5d4667af4fb = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5d960f4305e2498097199b54dd0f174e.setIcon(icon_590e66b7f6cf4c759480d5d4667af4fb);
+            
+    
+            var popup_4df1e2a339aa4ea0a468cf0c3ed0d990 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a6c90bd96c764c7489accb788b703202 = $(`<div id="html_a6c90bd96c764c7489accb788b703202" style="width: 100.0%; height: 100.0%;">東大武陵路口(國軍新竹醫院)</div>`)[0];
+                popup_4df1e2a339aa4ea0a468cf0c3ed0d990.setContent(html_a6c90bd96c764c7489accb788b703202);
+            
+
+            marker_5d960f4305e2498097199b54dd0f174e.bindPopup(popup_4df1e2a339aa4ea0a468cf0c3ed0d990)
+            ;
+
+            
+        
+    
+        var marker_b4c5d35da46f45d5a5453d3f8dfc8acb = L.marker(
+            [24.79912, 120.95243],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_e19edb73d8bb4d7eb1c2a56a20f0875c = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b4c5d35da46f45d5a5453d3f8dfc8acb.setIcon(icon_e19edb73d8bb4d7eb1c2a56a20f0875c);
+            
+    
+            var popup_16bfb42ae92d4451a4e4143dc7e303d9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e572da2a87b842eab5a904eca4c116ef = $(`<div id="html_e572da2a87b842eab5a904eca4c116ef" style="width: 100.0%; height: 100.0%;">新竹和平公園</div>`)[0];
+                popup_16bfb42ae92d4451a4e4143dc7e303d9.setContent(html_e572da2a87b842eab5a904eca4c116ef);
+            
+
+            marker_b4c5d35da46f45d5a5453d3f8dfc8acb.bindPopup(popup_16bfb42ae92d4451a4e4143dc7e303d9)
+            ;
+
+            
+        
+    
+        var marker_0aeae90d18174cc79f089fa8e7b5eaf9 = L.marker(
+            [24.77386, 120.97008],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_2d816c10df3e47c6a91ea37aaaddde7e = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0aeae90d18174cc79f089fa8e7b5eaf9.setIcon(icon_2d816c10df3e47c6a91ea37aaaddde7e);
+            
+    
+            var popup_bd30730748e945cab3dca2ea78746921 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9a8b1bb0f4eb46689346e427151065bc = $(`<div id="html_9a8b1bb0f4eb46689346e427151065bc" style="width: 100.0%; height: 100.0%;">青草湖(煙波大飯店)</div>`)[0];
+                popup_bd30730748e945cab3dca2ea78746921.setContent(html_9a8b1bb0f4eb46689346e427151065bc);
+            
+
+            marker_0aeae90d18174cc79f089fa8e7b5eaf9.bindPopup(popup_bd30730748e945cab3dca2ea78746921)
+            ;
+
+            
+        
+    
+        var marker_63c38ea388d74f3698a77faf302556f1 = L.marker(
+            [24.797087, 120.987619],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_c8f432bac2e64aa6a47aac8ed90ac4f5 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_63c38ea388d74f3698a77faf302556f1.setIcon(icon_c8f432bac2e64aa6a47aac8ed90ac4f5);
+            
+    
+            var popup_61ca205b95d042bd855ec7ab410121af = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_94ce2de54aea4572822e616c5a0635da = $(`<div id="html_94ce2de54aea4572822e616c5a0635da" style="width: 100.0%; height: 100.0%;">十八尖山(新竹高商)</div>`)[0];
+                popup_61ca205b95d042bd855ec7ab410121af.setContent(html_94ce2de54aea4572822e616c5a0635da);
+            
+
+            marker_63c38ea388d74f3698a77faf302556f1.bindPopup(popup_61ca205b95d042bd855ec7ab410121af)
+            ;
+
+            
+        
+    
+        var marker_5b1c85ee5b54457692439e2a50faeaa6 = L.marker(
+            [24.805122, 120.944251],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_35105780c0f247b7bfca80fcc5105830 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5b1c85ee5b54457692439e2a50faeaa6.setIcon(icon_35105780c0f247b7bfca80fcc5105830);
+            
+    
+            var popup_e9119c7be0b24c0eb591e445de475660 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bc596031224d476791aae79a346c897e = $(`<div id="html_bc596031224d476791aae79a346c897e" style="width: 100.0%; height: 100.0%;">虎林棒球場</div>`)[0];
+                popup_e9119c7be0b24c0eb591e445de475660.setContent(html_bc596031224d476791aae79a346c897e);
+            
+
+            marker_5b1c85ee5b54457692439e2a50faeaa6.bindPopup(popup_e9119c7be0b24c0eb591e445de475660)
+            ;
+
+            
+        
+    
+        var marker_75e6f18ca9ec43aea309ea40397e6442 = L.marker(
+            [24.807606, 120.960621],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_851e800d1c7f4ec99f40841ba03c1627 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_75e6f18ca9ec43aea309ea40397e6442.setIcon(icon_851e800d1c7f4ec99f40841ba03c1627);
+            
+    
+            var popup_08ec6c80a49c4073bc9622c9d0dae082 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_18432604474c4e6598aca584380ae7f8 = $(`<div id="html_18432604474c4e6598aca584380ae7f8" style="width: 100.0%; height: 100.0%;">新竹棒球場</div>`)[0];
+                popup_08ec6c80a49c4073bc9622c9d0dae082.setContent(html_18432604474c4e6598aca584380ae7f8);
+            
+
+            marker_75e6f18ca9ec43aea309ea40397e6442.bindPopup(popup_08ec6c80a49c4073bc9622c9d0dae082)
+            ;
+
+            
+        
+    
+        var marker_da615dfbb9fe491b87952821867a8428 = L.marker(
+            [24.811967, 120.96873],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_9306a5542ab048069d98c00513bd2a9d = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_da615dfbb9fe491b87952821867a8428.setIcon(icon_9306a5542ab048069d98c00513bd2a9d);
+            
+    
+            var popup_f48b35f14e4a44fba56a7331ca3204d3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b9f7587b65b44899a190964d6e653b32 = $(`<div id="html_b9f7587b65b44899a190964d6e653b32" style="width: 100.0%; height: 100.0%;">新竹市文化局</div>`)[0];
+                popup_f48b35f14e4a44fba56a7331ca3204d3.setContent(html_b9f7587b65b44899a190964d6e653b32);
+            
+
+            marker_da615dfbb9fe491b87952821867a8428.bindPopup(popup_f48b35f14e4a44fba56a7331ca3204d3)
+            ;
+
+            
+        
+    
+        var marker_f2499395b3a84b49ac5c85b563a20246 = L.marker(
+            [24.784193, 120.996969],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_94e6687075f1471493387b4ca268383e = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f2499395b3a84b49ac5c85b563a20246.setIcon(icon_94e6687075f1471493387b4ca268383e);
+            
+    
+            var popup_aa9d7bc62b6b4754aaf98e7782e005d0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ad8157dfc99c4e24a7be748d39002506 = $(`<div id="html_ad8157dfc99c4e24a7be748d39002506" style="width: 100.0%; height: 100.0%;">交通大學(研三舍)</div>`)[0];
+                popup_aa9d7bc62b6b4754aaf98e7782e005d0.setContent(html_ad8157dfc99c4e24a7be748d39002506);
+            
+
+            marker_f2499395b3a84b49ac5c85b563a20246.bindPopup(popup_aa9d7bc62b6b4754aaf98e7782e005d0)
+            ;
+
+            
+        
+    
+        var marker_e11cfd68b6a245128949350abf22f3fe = L.marker(
+            [24.795358, 120.991966],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_a11c0cb9c501410f9fd9f6e63fdbce86 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e11cfd68b6a245128949350abf22f3fe.setIcon(icon_a11c0cb9c501410f9fd9f6e63fdbce86);
+            
+    
+            var popup_ce8cb3b0b9e74890a7f817aad361a108 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_71097a31962d432186926ec3aaecf579 = $(`<div id="html_71097a31962d432186926ec3aaecf579" style="width: 100.0%; height: 100.0%;">清華大學(台達館)</div>`)[0];
+                popup_ce8cb3b0b9e74890a7f817aad361a108.setContent(html_71097a31962d432186926ec3aaecf579);
+            
+
+            marker_e11cfd68b6a245128949350abf22f3fe.bindPopup(popup_ce8cb3b0b9e74890a7f817aad361a108)
+            ;
+
+            
+        
+    
+        var marker_82d39d52e45b497c82904cd639ef1d9b = L.marker(
+            [24.789427, 120.927926],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_0f2250e1e54c4195bd58b3530a07ac32 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_82d39d52e45b497c82904cd639ef1d9b.setIcon(icon_0f2250e1e54c4195bd58b3530a07ac32);
+            
+    
+            var popup_a5432a0ba7984e819f6c343b63945523 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0190a552f37843c2bb05ef7d49645d8d = $(`<div id="html_0190a552f37843c2bb05ef7d49645d8d" style="width: 100.0%; height: 100.0%;">大庄國小</div>`)[0];
+                popup_a5432a0ba7984e819f6c343b63945523.setContent(html_0190a552f37843c2bb05ef7d49645d8d);
+            
+
+            marker_82d39d52e45b497c82904cd639ef1d9b.bindPopup(popup_a5432a0ba7984e819f6c343b63945523)
+            ;
+
+            
+        
+    
+        var marker_8dd53de463da4e73bf87a7a813eed403 = L.marker(
+            [24.78142, 121.00607],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_32bb85a42b3c4548972d3107e7a8b588 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8dd53de463da4e73bf87a7a813eed403.setIcon(icon_32bb85a42b3c4548972d3107e7a8b588);
+            
+    
+            var popup_1cf7332a14494a218b1697e764ceed03 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_552a1ccb94af4511a9723eee8f9c7abb = $(`<div id="html_552a1ccb94af4511a9723eee8f9c7abb" style="width: 100.0%; height: 100.0%;">竹科管理局</div>`)[0];
+                popup_1cf7332a14494a218b1697e764ceed03.setContent(html_552a1ccb94af4511a9723eee8f9c7abb);
+            
+
+            marker_8dd53de463da4e73bf87a7a813eed403.bindPopup(popup_1cf7332a14494a218b1697e764ceed03)
+            ;
+
+            
+        
+    
+        var marker_a1876cbee8ba4083bc7b3797729eebb2 = L.marker(
+            [24.78004, 121.0054],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_09d4c9a93af145569daa20cfc8ef994e = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a1876cbee8ba4083bc7b3797729eebb2.setIcon(icon_09d4c9a93af145569daa20cfc8ef994e);
+            
+    
+            var popup_9b234911cc1f4b9885b21232ea0ad528 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_425965324553441d99ba6f701cebf53b = $(`<div id="html_425965324553441d99ba6f701cebf53b" style="width: 100.0%; height: 100.0%;">科技生活館</div>`)[0];
+                popup_9b234911cc1f4b9885b21232ea0ad528.setContent(html_425965324553441d99ba6f701cebf53b);
+            
+
+            marker_a1876cbee8ba4083bc7b3797729eebb2.bindPopup(popup_9b234911cc1f4b9885b21232ea0ad528)
+            ;
+
+            
+        
+    
+        var marker_0ed88cc7bef1453f8acd3ba1ff0b611a = L.marker(
+            [24.77874, 121.01078],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_bdd1f9dff57342c0908f4646047e7443 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0ed88cc7bef1453f8acd3ba1ff0b611a.setIcon(icon_bdd1f9dff57342c0908f4646047e7443);
+            
+    
+            var popup_1eb217b9809a4e1eace8535912f438ee = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_eacdab7cac8d4ec58cbfbcced28032e3 = $(`<div id="html_eacdab7cac8d4ec58cbfbcced28032e3" style="width: 100.0%; height: 100.0%;">靜心湖</div>`)[0];
+                popup_1eb217b9809a4e1eace8535912f438ee.setContent(html_eacdab7cac8d4ec58cbfbcced28032e3);
+            
+
+            marker_0ed88cc7bef1453f8acd3ba1ff0b611a.bindPopup(popup_1eb217b9809a4e1eace8535912f438ee)
+            ;
+
+            
+        
+    
+        var marker_c96a54764ba34160ad2ed50a0ec8c3f5 = L.marker(
+            [24.77739, 121.01466],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_781748644d7f4f9db24c15784fca8f2e = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c96a54764ba34160ad2ed50a0ec8c3f5.setIcon(icon_781748644d7f4f9db24c15784fca8f2e);
+            
+    
+            var popup_dbc521de4cdc492ead922f334902e513 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8aff654fa53b4d488fc16c713285db28 = $(`<div id="html_8aff654fa53b4d488fc16c713285db28" style="width: 100.0%; height: 100.0%;">金山寺</div>`)[0];
+                popup_dbc521de4cdc492ead922f334902e513.setContent(html_8aff654fa53b4d488fc16c713285db28);
+            
+
+            marker_c96a54764ba34160ad2ed50a0ec8c3f5.bindPopup(popup_dbc521de4cdc492ead922f334902e513)
+            ;
+
+            
+        
+    
+        var marker_619987ef42f344ffb6929a31ae9e53a7 = L.marker(
+            [24.77279, 121.01881],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_d7a17ec6854b4d9db98c3195b33ccc7d = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_619987ef42f344ffb6929a31ae9e53a7.setIcon(icon_d7a17ec6854b4d9db98c3195b33ccc7d);
+            
+    
+            var popup_0d2d636f70c54546b499f39c1c8c2280 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8495daa6134a46b9b0b71f8894badd21 = $(`<div id="html_8495daa6134a46b9b0b71f8894badd21" style="width: 100.0%; height: 100.0%;">矽導研發中心停車場</div>`)[0];
+                popup_0d2d636f70c54546b499f39c1c8c2280.setContent(html_8495daa6134a46b9b0b71f8894badd21);
+            
+
+            marker_619987ef42f344ffb6929a31ae9e53a7.bindPopup(popup_0d2d636f70c54546b499f39c1c8c2280)
+            ;
+
+            
+        
+    
+        var marker_58d365e7b7964d1b8de9cbf753b94670 = L.marker(
+            [24.77092, 121.02517],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_54ddbcfef4bb4154b853287cf65bc824 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_58d365e7b7964d1b8de9cbf753b94670.setIcon(icon_54ddbcfef4bb4154b853287cf65bc824);
+            
+    
+            var popup_7e46ee2902834a2ab69a6a5bedf5e5db = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5def0af5a089416cb5aca469a713b6c2 = $(`<div id="html_5def0af5a089416cb5aca469a713b6c2" style="width: 100.0%; height: 100.0%;">篤行會館</div>`)[0];
+                popup_7e46ee2902834a2ab69a6a5bedf5e5db.setContent(html_5def0af5a089416cb5aca469a713b6c2);
+            
+
+            marker_58d365e7b7964d1b8de9cbf753b94670.bindPopup(popup_7e46ee2902834a2ab69a6a5bedf5e5db)
+            ;
+
+            
+        
+    
+        var marker_8d5e49fea37d4ced8a7e1101f4fb9533 = L.marker(
+            [24.77282, 121.01019],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_0e549460c2df4a4c9f42f9b77eaa0282 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8d5e49fea37d4ced8a7e1101f4fb9533.setIcon(icon_0e549460c2df4a4c9f42f9b77eaa0282);
+            
+    
+            var popup_45ebab909f074857a3bf4242f38d3a5b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_af3dcc2e2ccc4089b5789d63720d7bfd = $(`<div id="html_af3dcc2e2ccc4089b5789d63720d7bfd" style="width: 100.0%; height: 100.0%;">園二園三廣場</div>`)[0];
+                popup_45ebab909f074857a3bf4242f38d3a5b.setContent(html_af3dcc2e2ccc4089b5789d63720d7bfd);
+            
+
+            marker_8d5e49fea37d4ced8a7e1101f4fb9533.bindPopup(popup_45ebab909f074857a3bf4242f38d3a5b)
+            ;
+
+            
+        
+    
+        var marker_7ae4367a53614850bece507dd1b88cbd = L.marker(
+            [24.77884, 120.99843],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_3cddb2c518134d39a285502d5f135130 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7ae4367a53614850bece507dd1b88cbd.setIcon(icon_3cddb2c518134d39a285502d5f135130);
+            
+    
+            var popup_9959be30fe4c4729a503ab65bbe0d81e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0978e71d5cd54a0cb4cb437c0925405b = $(`<div id="html_0978e71d5cd54a0cb4cb437c0925405b" style="width: 100.0%; height: 100.0%;">研發四路公園</div>`)[0];
+                popup_9959be30fe4c4729a503ab65bbe0d81e.setContent(html_0978e71d5cd54a0cb4cb437c0925405b);
+            
+
+            marker_7ae4367a53614850bece507dd1b88cbd.bindPopup(popup_9959be30fe4c4729a503ab65bbe0d81e)
+            ;
+
+            
+        
+    
+        var marker_8b4bd8a27c694d559aa2f8f0c731147a = L.marker(
+            [24.78386, 120.9942],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_e528be751a5848d5a95e8f249f0c373a = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8b4bd8a27c694d559aa2f8f0c731147a.setIcon(icon_e528be751a5848d5a95e8f249f0c373a);
+            
+    
+            var popup_80c7a2e3de0e4254a8741545f0667de4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0d7cdb4ea75441b4950617b12f0ca375 = $(`<div id="html_0d7cdb4ea75441b4950617b12f0ca375" style="width: 100.0%; height: 100.0%;">交通大學-新安路</div>`)[0];
+                popup_80c7a2e3de0e4254a8741545f0667de4.setContent(html_0d7cdb4ea75441b4950617b12f0ca375);
+            
+
+            marker_8b4bd8a27c694d559aa2f8f0c731147a.bindPopup(popup_80c7a2e3de0e4254a8741545f0667de4)
+            ;
+
+            
+        
+    
+        var marker_2e81a894f0d7477583877cc63faf41dc = L.marker(
+            [24.77778, 121.00214],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_79aa7dba634f486da61b41b42745633b = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2e81a894f0d7477583877cc63faf41dc.setIcon(icon_79aa7dba634f486da61b41b42745633b);
+            
+    
+            var popup_f1c59b3a448a419d8258304b39ce59c7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ca70621bc5ae402c86dfad0aabfa7471 = $(`<div id="html_ca70621bc5ae402c86dfad0aabfa7471" style="width: 100.0%; height: 100.0%;">研發二路停車場</div>`)[0];
+                popup_f1c59b3a448a419d8258304b39ce59c7.setContent(html_ca70621bc5ae402c86dfad0aabfa7471);
+            
+
+            marker_2e81a894f0d7477583877cc63faf41dc.bindPopup(popup_f1c59b3a448a419d8258304b39ce59c7)
+            ;
+
+            
+        
+    
+        var marker_024234cd419847fab782ed232f24afbc = L.marker(
+            [24.77395, 121.0155],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_cafa382c0409498ebd84ee7332e6303c = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_024234cd419847fab782ed232f24afbc.setIcon(icon_cafa382c0409498ebd84ee7332e6303c);
+            
+    
+            var popup_e85da14893764536a244bf41c66f01b9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bc8aad72d92648e08e6cab3a38bf9c62 = $(`<div id="html_bc8aad72d92648e08e6cab3a38bf9c62" style="width: 100.0%; height: 100.0%;">力行一路力行六路口</div>`)[0];
+                popup_e85da14893764536a244bf41c66f01b9.setContent(html_bc8aad72d92648e08e6cab3a38bf9c62);
+            
+
+            marker_024234cd419847fab782ed232f24afbc.bindPopup(popup_e85da14893764536a244bf41c66f01b9)
+            ;
+
+            
+        
+    
+        var marker_13fa07c4cc2c450f81c6548e15d1c469 = L.marker(
+            [24.76807, 121.01915],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_3536c89930074257b0f70059e13699ed = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_13fa07c4cc2c450f81c6548e15d1c469.setIcon(icon_3536c89930074257b0f70059e13699ed);
+            
+    
+            var popup_b8e219214ab94219b43ffae98fe1a21d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_21cf4e9e1d884de8a496d39b99c8a743 = $(`<div id="html_21cf4e9e1d884de8a496d39b99c8a743" style="width: 100.0%; height: 100.0%;">聯園</div>`)[0];
+                popup_b8e219214ab94219b43ffae98fe1a21d.setContent(html_21cf4e9e1d884de8a496d39b99c8a743);
+            
+
+            marker_13fa07c4cc2c450f81c6548e15d1c469.bindPopup(popup_b8e219214ab94219b43ffae98fe1a21d)
+            ;
+
+            
+        
+    
+        var marker_b8b2434c24324a26a840c5df4be10803 = L.marker(
+            [24.77678, 120.99512],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_a1208fb4125a41cc8fa007890afad21f = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b8b2434c24324a26a840c5df4be10803.setIcon(icon_a1208fb4125a41cc8fa007890afad21f);
+            
+    
+            var popup_8b2db70105414c0681330738fe1242b2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f40362036a2241368106e877fbf82a77 = $(`<div id="html_f40362036a2241368106e877fbf82a77" style="width: 100.0%; height: 100.0%;">園區三路研新一路口</div>`)[0];
+                popup_8b2db70105414c0681330738fe1242b2.setContent(html_f40362036a2241368106e877fbf82a77);
+            
+
+            marker_b8b2434c24324a26a840c5df4be10803.bindPopup(popup_8b2db70105414c0681330738fe1242b2)
+            ;
+
+            
+        
+    
+        var marker_fedb6b251bf5432aac39dc46b98f3ae3 = L.marker(
+            [24.78228, 121.00198],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_fd99d346e64e4036a7fbd10c35925b94 = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fedb6b251bf5432aac39dc46b98f3ae3.setIcon(icon_fd99d346e64e4036a7fbd10c35925b94);
+            
+    
+            var popup_7e584d8a12554bc995d3ba620448775e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_aacb5aa82b17426d856b24584f097e95 = $(`<div id="html_aacb5aa82b17426d856b24584f097e95" style="width: 100.0%; height: 100.0%;">同業公會</div>`)[0];
+                popup_7e584d8a12554bc995d3ba620448775e.setContent(html_aacb5aa82b17426d856b24584f097e95);
+            
+
+            marker_fedb6b251bf5432aac39dc46b98f3ae3.bindPopup(popup_7e584d8a12554bc995d3ba620448775e)
+            ;
+
+            
+        
+    
+        var marker_40f9ff6cded6405d960696494864fe45 = L.marker(
+            [24.77872, 120.98996],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f704e2a834f442d9b010d87aaebc79d9);
+        
+    
+
+                var icon_713244d6c7ef411d922a04f9e92264bb = L.AwesomeMarkers.icon({
+                    icon: 'fa-bicycle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_40f9ff6cded6405d960696494864fe45.setIcon(icon_713244d6c7ef411d922a04f9e92264bb);
+            
+    
+            var popup_22ec5bb4043a47df9d5ed7f9cd42073f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_38e41d5bbe34476497ea2c4d4665b0d3 = $(`<div id="html_38e41d5bbe34476497ea2c4d4665b0d3" style="width: 100.0%; height: 100.0%;">興業二路停車場</div>`)[0];
+                popup_22ec5bb4043a47df9d5ed7f9cd42073f.setContent(html_38e41d5bbe34476497ea2c4d4665b0d3);
+            
+
+            marker_40f9ff6cded6405d960696494864fe45.bindPopup(popup_22ec5bb4043a47df9d5ed7f9cd42073f)
+            ;
+
+            
+        
+</script>

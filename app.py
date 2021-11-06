@@ -13,6 +13,7 @@ import geocoder
 from apscheduler.schedulers.background import BackgroundScheduler
 import os
 
+#app = Flask(__name__)
 app = Flask(__name__, static_url_path='', static_folder='static')
 
 @app.route("/", methods=['GET'])
@@ -64,41 +65,17 @@ def map_w01_6():
 #####################
 # Scheduler
 #####################
-def job_wakeup():
+def job_fun1():
     print('cron fun1: awake myself')
     url = 'https://malo-cron2.herokuapp.com/'
     r = requests.get(url)
     print(r)
 
-def send_line(msg, token='QQXinb4sYDttSEoiIlgamfr7vmzkAQJRTyxt4TCngVy'):
-    url = "https://notify-api.line.me/api/notify"  # --> 不支援http, 只能用https
-    headers = {"Authorization" : "Bearer "+ token}
-    title = 'jenny排程測試'
-    message =  '[%s] %s' %(title, msg)
-    payload = {"message" :  message}
-
-    r = requests.post(url ,headers = headers ,params=payload)
-    
-#- 空污通報
-def job_function2():
-    url = 'https://data.epa.gov.tw/api/v1/aqx_p_432?format=json&api_key=9be7b239-557b-4c10-9775-78cadfc555e9'
-    r = requests.get(url)
-    print(r)
-    data = r.json()
-    records = data['records']
-    for item in records:
-        if item['County']=='高雄市' and item['SiteName']=='鳳山':
-            send_line('%s>> AQI=%s' %(item['SiteName'], item['AQI']))
-
 def start_scheduler():
     scheduler = BackgroundScheduler()
 
     # run every 10 minute
-    #scheduler.add_job(job_wakeup, 'cron', minute='*/10')
-
-    # 每天早上6:30執行
-    #scheduler.add_job(job_function2, 'cron', hour='6', minute='30')
-    #scheduler.add_job(job_function2, 'cron', minute='*/1')
+    scheduler.add_job(job_fun1, 'cron', minute='*/1')
 
     # start the scheduler
     scheduler.start()
